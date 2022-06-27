@@ -1,0 +1,27 @@
+.Hero__wrapper{
+    background-image: url(../../assets/images/slider-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+    
+    
+}
+.Hero__content{
+    max-width: 35%;
+    padding: 7% 0;
+    margin-left: 10%
+}
+.Hero__heading{
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+}
+.Hero__heading--red{
+    color: red;
+}
+.Hero__para{
+    text-align: justify;
+    font-weight: 500;
+    font-size: 0.9rem;
+}

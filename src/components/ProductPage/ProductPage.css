@@ -1,0 +1,23 @@
+.Item__wrapper{
+    padding: 6% 8%;
+}
+.Item__details{
+    margin-top: 5%;
+}
+.Item__count__content{
+    margin-top: 5%;
+}
+.Item__count:hover{
+background-color: transparent;
+color: #000;
+}
+.Item__price{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.Item__btn{
+    margin-right: 2%;
+}
+/* .Item__btn--cart{
+    margin-top: 5%;
+} */

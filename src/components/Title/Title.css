@@ -1,0 +1,19 @@
+.Title__wrapper{
+    position: relative;
+    padding: 2% 0;
+}
+.Title__heading{
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: 600;
+    
+}
+.Title__heading--line{
+    height: 5px;
+    background-color: red;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    
+}

@@ -1,0 +1,27 @@
+.Product__wrapper{
+    padding: 5% 8%;
+    
+}
+.Product__btn{
+   justify-content: center;
+   margin-bottom: 5%;
+}
+.Product__btn--select{
+    margin-right: 1rem;
+}
+.Product__content{
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 5%;
+}
+.Product__image{
+    width: 11rem;
+    height: 12rem;
+    margin: 0 auto;
+}
+.Product__title{
+    font-size: 1.1rem;
+}
+.Product__text{
+    font-weight: 700;
+}

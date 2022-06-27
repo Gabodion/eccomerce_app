@@ -1,0 +1,38 @@
+.Cart__wrapper{
+    padding: 5%;
+    /* text-align: center; */
+    width: 70%;
+    margin: 10% auto;
+    border: 1px solid grey;
+    
+}
+.Cart__heading--title{
+    font-weight: 700;
+    
+}
+.Cart__container{
+    margin-top: 8%;
+   
+}
+.Cart__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.Cart__img{
+    width: 20%;
+}
+.Cart__title{
+    font-size: 1.6rem;
+    word-break: break-word;
+
+}
+.Cart__total{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.Cart__item button{
+    margin-right: 3%;
+}
