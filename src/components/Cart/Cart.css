@@ -1,12 +1,12 @@
 .Cart__wrapper{
     padding: 5%;
     /* text-align: center; */
-    width: 70%;
-    margin: 10% auto;
-    border: 1px solid grey;
+    width: 90%;
+    margin: 1% auto;
+    /* border: 1px solid grey; */
     
 }
-.Cart__heading--title{
+/* .Cart__heading--title{
     font-weight: 700;
     
 }
@@ -35,4 +35,4 @@
 
 .Cart__item button{
     margin-right: 3%;
-}
+} */

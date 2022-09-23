@@ -37,12 +37,12 @@ const Product = () => {
     return (
         <div className='Product__wrapper'>
             <Title heading="Our Products" />
-            <div className='d-flex Product__btn'>
-                <Button variant='outline-dark' className='Product__btn--select' onClick={() => setProducts(data)}>All</Button>
-                <Button variant='outline-dark' className='Product__btn--select' onClick={() => filterProduct("men's clothing")}>Men's clothing</Button>
-                <Button variant='outline-dark' className='Product__btn--select'  onClick={() => filterProduct("women's clothing")}>Women's clothing</Button>
-                <Button variant='outline-dark' className='Product__btn--select'  onClick={() => filterProduct("jewelery")}>Jewelery</Button>
-                <Button variant='outline-dark' className='Product__btn--select'  onClick={() => filterProduct("electronics")}>Electronics</Button>
+            <div className='d-flex Product__btn flex-wrap'>
+                <Button variant='outline-dark' className='Product__btn--select mb-3' onClick={() => setProducts(data)}>All</Button>
+                <Button variant='outline-dark' className='Product__btn--select mb-3' onClick={() => filterProduct("men's clothing")}>Men's clothing</Button>
+                <Button variant='outline-dark' className='Product__btn--select mb-3'  onClick={() => filterProduct("women's clothing")}>Women's clothing</Button>
+                <Button variant='outline-dark' className='Product__btn--select mb-3'  onClick={() => filterProduct("jewelery")}>Jewelery</Button>
+                <Button variant='outline-dark' className='Product__btn--select mb-3'  onClick={() => filterProduct("electronics")}>Electronics</Button>
             
             </div>
             
@@ -51,7 +51,7 @@ const Product = () => {
             {
                 products.map(product => {
                     return (
-                        <Col lg="4" md="12" data-filter="men's clothing">
+                        <Col lg="4" md="6" data-filter="men's clothing">
                             <Card key={product.id} style={{ width: '18rem' }} className="Product__content">
                                 <Card.Img variant="top" src={product.image} className="Product__image" />
                                 <Card.Body>

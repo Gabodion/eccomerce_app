@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Navigation from '../Navbar/Navbar';
 import { addToCart } from '../../actions/cartActions';
 
+
 import "./ProductPage.css";
 
 
@@ -36,11 +37,11 @@ const ProductPage = () => {
         <div className='Item__wrapper'>
             <Container>
                 <Row>
-                    <Col lg="6" md="12">
-                        <Image fluid="true" src={product.image} width="60%" className='Item__img'/>
+                    <Col lg="5" md="12">
+                        <Image fluid="true" src={product.image} width="50%" className='Item__img'/>
                     </Col>
                     <Col lg="6" md="12" className='Item__details'>
-                        <h1>{product.title}</h1>
+                        <h1 className='fs-3 fw-bold mb-3'>{product.title}</h1>
                         <p>{product.description}</p>
                         <hr/>
                         <div className='Item__count__content'>

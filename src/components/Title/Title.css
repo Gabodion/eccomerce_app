@@ -6,6 +6,7 @@
     text-align: center;
     margin-bottom: 5%;
     font-weight: 600;
+    font-size: 3rem;
     
 }
 .Title__heading--line{
@@ -13,7 +14,45 @@
     background-color: red;
     width: 150px;
     position: absolute;
-    top: 50%;
-    left: 44%;
+    top: 60%;
+    left: 42%;
     
+}
+
+@media screen and (max-width: 900px) {
+    .Title__heading--line{
+        top: 70%;
+        left: 35%;
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Title__heading{
+       
+        font-size: 2.5rem;
+        
+    }
+}
+@media screen and (max-width: 540px) {
+    .Title__heading{
+       
+        font-size: 2rem;
+        
+    }
+}
+@media screen and (max-width: 540px) {
+    .Title__heading--line{
+        top: 80%;
+        left: 33%;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .Title__heading--line{
+        top: 83%;
+        left: 28%;
+        width: 100px;
+    }
 }
