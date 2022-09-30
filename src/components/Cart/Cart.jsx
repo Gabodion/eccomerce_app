@@ -19,7 +19,7 @@ const Cart = () => {
             <div className='Cart__wrapper shadow'>
                 <div className='border-dark'>
                     <div className='row'>
-                        <div className='col-lg-8 col-md-6'>
+                        <div className='col-lg-8 col-md-12'>
                             <div className='py-4 px-4'>
                                 <div className='d-flex justify-content-between align-items-center '>
                                     <h2 className='fs-4 fw-bold'>Shopping Cart</h2>
@@ -31,19 +31,22 @@ const Cart = () => {
                                             <div className='Cart__container mt-4 '>
                                                 <hr />
                                                 <div className='cart__content d-flex align-items-center justify-content-between mt-4'>
-                                                    <img src={product.image} width="15%" className='ms-0' style={{objectFit: "content"}}/>
-                                                    <div className=''>
+                                                <div className='d-flex align-items-center mb-3'>
+                                                    <img src={product.image} width="60px" className='ms-0' style={{objectFit: "content"}}/>
+                                                    <div className='ms-3'>
                                                         <p className='my-0'>{product.category}</p>
                                                         <p className='my-0 fw-bold'>{product.title.slice(0, 18)}</p>
                                                     </div>
 
-                                                    <div className='d-flex align-items-center'>
+                                                </div>
+                                                    
+                                                    <div className='d-flex align-items-center mb-3'>
                                                         <button className='border-0 px-2 bg-transparent fs-3' onClick={() => dispatch(increaseQty(product))}>+</button>
                                                         <button className='border-light bg-transparent py-0 px-2'>{product.qty}</button>
                                                         <button className='border-0 px-2 bg-transparent fs-3' onClick={() => dispatch(decreaseQty(product))}>-</button>
                                                     </div>
-                                                    <p className='fw-bold fs-6 mb-0'>${product.qty * product.price}</p>
-                                                    <button className='bg-dark text-white px-1 py-1 btn' onClick={() => dispatch(removeFromCart(product))}>Delete</button>
+                                                    <p className='fw-bold fs-6 mb-3'>${product.qty * product.price}</p>
+                                                    <button className='bg-dark text-white px-1 py-1 btn mb-3' onClick={() => dispatch(removeFromCart(product))}>Delete</button>
                                                 </div>
 
                                             </div>
@@ -58,7 +61,7 @@ const Cart = () => {
                             </div>
 
                         </div>
-                        <div className='col-lg-4 col-md-6 bg-light'>
+                        <div className='col-lg-4 col-md-12 bg-light'>
                             <div className='py-4 px-2'>
                                 <h2 className='fs-4 fw-bold text-dark mt-4'>Summary</h2>
                                 <hr />

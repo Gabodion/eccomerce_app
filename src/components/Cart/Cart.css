@@ -36,3 +36,9 @@
 .Cart__item button{
     margin-right: 3%;
 } */
+
+@media screen and (max-width: 660px) {
+    .cart__content{
+        flex-direction: column;
+    }
+}
